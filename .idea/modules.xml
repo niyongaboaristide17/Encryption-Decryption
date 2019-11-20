@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Encryption-Decryption.iml" filepath="$PROJECT_DIR$/.idea/modules/Encryption-Decryption.iml" group="Encryption-Decryption" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Encryption-Decryption/task/Encryption-Decryption-task.iml" filepath="$PROJECT_DIR$/.idea/modules/Encryption-Decryption/task/Encryption-Decryption-task.iml" group="Encryption-Decryption/Encryption-Decryption-task" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Encryption-Decryption/task/Encryption-Decryption-task_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Encryption-Decryption/task/Encryption-Decryption-task_main.iml" group="Encryption-Decryption/Encryption-Decryption-task" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Encryption-Decryption/task/Encryption-Decryption-task_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Encryption-Decryption/task/Encryption-Decryption-task_test.iml" group="Encryption-Decryption/Encryption-Decryption-task" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/util.iml" filepath="$PROJECT_DIR$/.idea/modules/util/util.iml" group="Encryption-Decryption/util" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/util_main.iml" filepath="$PROJECT_DIR$/.idea/modules/util/util_main.iml" group="Encryption-Decryption/util" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/util_test.iml" filepath="$PROJECT_DIR$/.idea/modules/util/util_test.iml" group="Encryption-Decryption/util" />
+    </modules>
+  </component>
+</project>

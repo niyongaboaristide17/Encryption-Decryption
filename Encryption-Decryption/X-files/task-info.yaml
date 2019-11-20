@@ -1,0 +1,37 @@
+type: edu
+custom_name: stage5
+files:
+- name: test/EncryptDecryptTest.java
+  visible: false
+  learner_created: false
+- name: src/encryptdecrypt/Main.java
+  visible: true
+  text: "package encryptdecrypt;\n\nimport java.util.*;\npublic class Main {\n   \
+    \ public static void main(String[] args) {\n        String decEnc = \"enc\";\n\
+    \        String msg = \"\";\n        int key = 0;\n        for(int i = 0,j=1;i<args.length;i+=2,j+=2){\n\
+    \            if(args[i].equals(\"-mode\")){\n                decEnc = args[j];\n\
+    \            }\n            if(args[i].equals(\"-data\")){\n                msg\
+    \ = args[j];\n            }\n            if(args[i].equals(\"-key\")){\n     \
+    \           key = Integer.parseInt(args[j]);\n            }\n        }\n     \
+    \   // Scanner sc = new Scanner(System.in);\n        // String decEnc = sc.nextLine();\n\
+    \        // String msg = sc.nextLine();\n        // int key = sc.nextInt();\n\
+    \        System.out.print(resultEncDec(decEnc, msg, key));\n    }\n\n    private\
+    \ static String resultEncDec(String decEnc,String msg,int key){\n        \n  \
+    \      if (decEnc.equals(\"enc\")) {\n            return encrypt(msg, key);\n\
+    \        } else {\n            return decrypt(msg, key);\n        }\n\n    }\n\
+    \n    private static String encrypt(String plainText,int key){\n        \n   \
+    \     String cipherText = \"\";\n        char[] myMsg = plainText.toCharArray();\n\
+    \        for (char c : myMsg) {\n            char ca = c;\n            ca += key;\n\
+    \            cipherText = cipherText + ca;\n        }\n        return cipherText;\n\
+    \n    }\n    private static String decrypt(String cipherText,int key){\n     \
+    \   \n        String plainMsg = \"\";\n        char[] myMsg = cipherText.toCharArray();\n\
+    \        for (char c : myMsg) {\n            char ca = c;\n            ca -= key;\n\
+    \            plainMsg = plainMsg + ca;\n        }\n        return plainMsg;\n\n\
+    \    }\n}"
+  learner_created: false
+- name: output.txt
+  visible: true
+  learner_created: true
+feedback_link: https://hyperskill.org/projects/46/stages/249/implement
+status: Solved
+record: 2

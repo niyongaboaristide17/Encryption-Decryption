@@ -1,0 +1,51 @@
+type: edu
+custom_name: stage2
+files:
+- name: test/EncryptDecryptTest.java
+  visible: false
+  learner_created: false
+- name: src/encryptdecrypt/Main.java
+  visible: true
+  text: |-
+    package encryptdecrypt;
+    import java.util.*;
+    public class Main {
+        public  static String createCipher(String plainMessage) throws Exception {
+            char[] enc = new char[26];
+            int i = 0;
+            for (char c = '\u007A';c >= '\u0061';c--) {
+                enc[i] = c;
+                //System.out.println(c);
+                i++;
+            }
+            String cipherText = "";
+            for (char c : plainMessage.toCharArray()) {
+                if (c >= '\u0061'&&c <= '\u007A'){
+                    int j = 0;
+                    for (char k = '\u0061';k <= '\u007A';k++) {
+                        if (k == c){
+                            cipherText += enc[j];
+                        }
+                        j++;
+                    }
+                }else{
+                    cipherText += c;
+                }
+            }
+
+            return cipherText;
+        }
+
+        public static void main(String[] args) {
+            try {
+                System.out.print(new Main().createCipher("we found a treasure!"));
+            }catch (Exception e){
+                System.err.println(e);
+            }
+        }
+
+    }
+  learner_created: false
+feedback_link: https://hyperskill.org/projects/46/stages/246/implement
+status: Failed
+record: 1

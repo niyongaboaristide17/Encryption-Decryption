@@ -1,0 +1,51 @@
+type: edu
+custom_name: stage4
+files:
+- name: test/EncryptDecryptTest.java
+  visible: false
+  learner_created: false
+- name: src/encryptdecrypt/Main.java
+  visible: true
+  text: |-
+    package encryptdecrypt;
+
+    import java.util.Scanner;
+
+    public class Main {
+        public static void main(String[] args) {
+            Scanner scanner = new Scanner(System.in);
+            String operation = scanner.nextLine();
+            char[] chars = scanner.nextLine().toCharArray();
+            int shift = scanner.nextInt();
+            switch (operation) {
+                case "enc":
+                    getEncryption(chars, shift);
+                    break;
+                case "dec":
+                    getDecryption(chars, shift);
+                    break;
+                default:
+                    System.out.println("Unknown operation");
+                    break;
+            }
+        }
+
+        public static void getDecryption(char[] chars, int shift) {
+            for (char item : chars) {
+                char shiftItem = (char) (item - shift);
+                System.out.print(shiftItem);
+
+            }
+        }
+
+        public static void getEncryption(char[] chars, int shift) {
+            for (char item : chars) {
+                char shiftItem = (char) (item + shift);
+                System.out.print(shiftItem);
+            }
+        }
+    }
+  learner_created: false
+feedback_link: https://hyperskill.org/projects/46/stages/248/implement
+status: Unchecked
+record: 6
